@@ -28,3 +28,13 @@
 * To split the dataset into train and test data
 * To apply KNN fit on the train data set
 * To test the KNN score against the test data set and print the accuracy.
+
+## 4.'linear_regression.py'
+* The celcius to fahrenheit conversion formula is tested with linear regression:
+### Description:
+* Data array is created with values from 1 to 20 for celcius.
+* Target array is created for Fahrenheit = Celcius*1.8 + 32
+* Data and Target array are split to train and test set.
+* linear regression fit is applied on train set.
+* Score is calculated for the regression by applying predict on test set.
+* Also the intercept (32) and coefficient (1.8) is printed.
