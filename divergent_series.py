@@ -1,9 +1,9 @@
+#!/usr/bin/env python3
 """
 To predict the divergent series 1+2+3....N given by the formula N(N+1)/2.
 First for a given N, try to predict the Sum which is 100% accurate.
 Second for a given Sum, try to predict the N which is 99% accurate. Try with different degrees of the polynomial and plot them.
 """
-#!/usr/bin/env python3
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.pipeline import make_pipeline
