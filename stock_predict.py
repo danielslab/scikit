@@ -42,5 +42,6 @@ def fit(File, Years=2.5, Win=15):
     plt.show()
 
 if len(argv) > 1:
-    fit(argv[1])
-fit('pdli.csv') # Your csv file
+    fit(argv[1]) # Your csv file in command line
+else:
+    fit('pdli.csv') # Your csv file in script
