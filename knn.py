@@ -17,6 +17,7 @@ plt.show()
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(data, quadrant, test_size=0.2, stratify=quadrant)
-knn = KNeighborsClassifier(n_neighbors=8)
-knn.fit(x_train, y_train)
-print('Accuracy =',knn.score(x_test,y_test))
+for n in range(1,6):    #To see underfitting and overfitting for various n_neighbors 
+    knn = KNeighborsClassifier(n_neighbors=n)
+    knn.fit(x_train, y_train)
+    print('Accuracy = %s for n_neighbors = %s' %(knn.score(x_test,y_test),n))
